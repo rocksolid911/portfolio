@@ -104,13 +104,16 @@ class AboutDesktop extends StatelessWidget {
                         style: TextStyle(
                             color: kPrimaryColor, fontSize: height * 0.018),
                       ),
-                      Row(
-                        children: [
-                          for (int i = 0; i < kTools.length; i++)
-                            ToolTechWidget(
-                              techName: kTools[i],
-                            ),
-                        ],
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            for (int i = 0; i < kTools.length; i++)
+                              ToolTechWidget(
+                                techName: kTools[i],
+                              ),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         height: height * 0.02,

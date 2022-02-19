@@ -119,29 +119,29 @@ class ServiceDetailsDescription extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20.0),
-          Align(
-            alignment: Alignment.center,
-            child: CustomFilledBtn(
-              height: 40.0,
-              //onPressed: () => launchURL("https://wa.me/?text=Hi Hamza!"),
-              btnColor: Color(0xff34CB62),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(FontAwesomeIcons.whatsapp),
-                  const SizedBox(width: 8.0),
-                  Text("WhatsApp"),
-                ],
-              ),
-            ),
-          ),
+          // Align(
+          //   alignment: Alignment.center,
+          //   child: CustomFilledBtn(
+          //     height: 40.0,
+          //     //onPressed: () => launchURL("https://wa.me/?text=Hi Hamza!"),
+          //     btnColor: Color(0xff34CB62),
+          //     child: Row(
+          //       mainAxisSize: MainAxisSize.min,
+          //       children: [
+          //         Icon(FontAwesomeIcons.whatsapp),
+          //         const SizedBox(width: 8.0),
+          //         Text("WhatsApp"),
+          //       ],
+          //     ),
+          //   ),
+          // ),
           const SizedBox(height: 20.0),
           Align(
             alignment: Alignment.center,
             child: CustomFilledBtn(
               height: 40.0,
-              // onPressed: () async => await launchURL(
-              //     "https://www.upwork.com/freelancers/~0197b0f6aaeba9675f"),
+              onPressed: ()  =>  launchURL(
+                  "https://www.upwork.com/freelancers/~015bfdb0e2641d6d4d?viewMode=1"),
               btnColor: Color(0xff13A800),
               child: Row(
                 mainAxisSize: MainAxisSize.min,

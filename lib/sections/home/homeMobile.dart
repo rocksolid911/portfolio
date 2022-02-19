@@ -59,7 +59,7 @@ class _HomeMobileState extends State<HomeMobile> {
                   height:200,
                   width: 250,
                   child: Lottie.asset(
-                    'lottie/91353-hello.json',
+                    'lottie/newhello.json',
                     repeat: true,
                     reverse: true,
                     animate: true,
@@ -89,7 +89,7 @@ class _HomeMobileState extends State<HomeMobile> {
                 ),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.play_arrow_rounded,
                       color: kPrimaryColor,
                     ),

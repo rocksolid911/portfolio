@@ -67,15 +67,13 @@ class HomeDesktop extends StatelessWidget {
                 //     ),
                 //   ],
                 // ),
-                Container(
-                  height:150,
-                  width: 250,
-                  child: Lottie.asset(
-                    'lottie/91353-hello.json',
-                    repeat: true,
-                    reverse: true,
-                    animate: true,
-                  ),
+                Lottie.asset(
+                  'lottie/newhello.json',
+                  repeat: true,
+                  reverse: true,
+                  animate: true,
+                  width: width*0.5,
+                  height: height*0.3,
                 ),
                 SizedBox(
                   height: height * 0.04,

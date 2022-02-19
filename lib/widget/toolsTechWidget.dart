@@ -16,18 +16,29 @@ class ToolTechWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 12.0),
       child: Row(
         children: [
-          Icon(
-            Icons.play_arrow,
-            color: kPrimaryColor,
-            size: MediaQuery.of(context).size.height * 0.02,
+          // Icon(
+          //   Icons.play_arrow,
+          //   color: kPrimaryColor,
+          //   size: MediaQuery.of(context).size.height * 0.02,
+          // ),
+          // AdaptiveText(
+          //   " $techName ",
+          //   style: TextStyle(
+          //     color:
+          //         _themeProvider.lightTheme ? Colors.grey[500] : Colors.white,
+          //   ),
+          // )
+          SizedBox(width: 20,),
+          Chip(
+            elevation: 20,
+            padding: EdgeInsets.all(8),
+            backgroundColor: Color(0xFF1E5128),
+            shadowColor: Colors.black,
+            label: Text(
+              '$techName',
+              style: TextStyle(fontSize: 12),
+            ), //Text
           ),
-          AdaptiveText(
-            " $techName ",
-            style: TextStyle(
-              color:
-                  _themeProvider.lightTheme ? Colors.grey[500] : Colors.white,
-            ),
-          )
         ],
       ),
     );

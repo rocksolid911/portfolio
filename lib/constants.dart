@@ -7,26 +7,26 @@ const Color kPrimaryColor = Color(0xFFF55449);
 // Social Media
 const kSocialIcons = [
   "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-  "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
-  "https://img.icons8.com/android/480/ffffff/twitter.png",
+  //"https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
+ // "https://img.icons8.com/android/480/ffffff/twitter.png",
   "https://img.icons8.com/metro/308/ffffff/linkedin.png",
   "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-  "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
+ // "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
 ];
 
 const kSocialLinks = [
   "https://facebook.com/mhmzdev",
-  "https://instagram.com/mhmzdev",
-  "https://twitter.com/mhmzdev",
+  //"https://instagram.com/mhmzdev",
+  //"https://twitter.com/mhmzdev",
   "https://linkedin.com/in/mhmzdev",
   "https://github.com/mhmzdev",
-  "https://mhamzadev.medium.com"
+  //"https://mhamzadev.medium.com"
 ];
 
 // URL Launcher
  launchURL(String _url)  async =>
     await canLaunch(_url) != null ?  await launch(_url) : throw 'Could not launch $_url';
-
+//remember to remove /assets before file name to work
 // Community
 final kCommunityLogo = [
   'htblogo.png',
@@ -45,11 +45,11 @@ final kTools = [
   "Flutter",
   "Dart",
   "Python",
-  "Java",
-  "C++",
+  "Linux",
+  "IOT",
   "HTML",
   "CSS",
-  "Bootstrap"
+  "React"
 ];
 
 // services
@@ -57,7 +57,7 @@ final kServicesIcons = [
   "lottie/app-developer.json",
   "lottie/uiux.json",
   "lottie/app-development2.json",
-  "lottie/ux-ui-design-iso.json",
+  //"lottie/ux-ui-design-iso.json",
   "lottie/uxui-design-flat-icon.json",
 ];
 
@@ -65,7 +65,7 @@ final kServicesTitles = [
   "Full App Development",
   "UI/UX Designing",
   "Rapid Prototyping",
-  "Technical Blog Writing",
+ // "Technical Blog Writing",
   "Open Source - GitHub",
 ];
 
@@ -81,24 +81,24 @@ final kServicesDescriptions = [
   "Android app development via Flutter\n- Splash Screen\n- Firebase Auth/Cloud\n- REST APIs\n- Maps integration and more...!",
   "Modern UI/UX Designing\n- Adobe XD\n- Mobile & Web designs\n- Interactive UI designs\n- Responsiveness\n- Promo Videos and more..!",
   "Rapid Prototype via Flutter\n- Working MVP\n- Quick & Working prototype",
-  "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
+ // "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
   "Open source GitHub Projects\n- Awesome README.md\n- Well documented\n- Header images and more...!",
 ];
 
 final kServicesLinks = [
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://www.fiverr.com/hamza6shakeel/get-you-modern-ui-design-using-adobe-xd",
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://mhamzadev.medium.com",
-  "https://github.com/mhmzdev"
+  "https://www.upwork.com/freelancers/~015bfdb0e2641d6d4d?viewMode=1",
+  "https://www.upwork.com/freelancers/~015bfdb0e2641d6d4d?viewMode=1",
+  "https://www.upwork.com/freelancers/~015bfdb0e2641d6d4d?viewMode=1",
+  //"https://mhamzadev.medium.com",
+  "https://github.com/rocksolid911",
 ];
 
 // projects
 final kProjectsBanner = [
-  "assets/projects/medkitB.png",
-  "assets/projects/quranB.png",
-  "assets/projects/hereiamB.png",
-  "assets/projects/covidB.png",
+  "projects/crypto.png",
+  "projects/meditation.png",
+  "projects/worldtour.png",
+  "projects/stopit.png",
 ];
 
 final kProjectsIcons = [
@@ -141,16 +141,16 @@ final kProjectsDescriptions = [
 ];
 
 final kProjectsLinks = [
-  "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",
-  "https://github.com/mhmzdev/The_Holy_Quran_App",
-  "https://github.com/mhmzdev/Here-I-Am-Alert-App",
-  "https://github.com/mhmzdev/Covid19-Tracker-App",
-  "https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI",
-  "https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone",
-  "https://github.com/mhmzdev/Earbender_Music_App",
-  "https://github.com/mhmzdev/FTP_GUI_Java",
-  "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
-  "https://github.com/mhmzdev/Hidev_Web",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
+  "https://github.com/rocksolid911",
 ];
 
 // Contact
@@ -167,7 +167,7 @@ final kContactTitles = [
 ];
 
 final kContactDetails = [
-  "Attock, Pakistan",
-  "(+92) 346 0159889",
-  "hamza@mhmz.dev"
+  "Odisha, India",
+  "(+91) 9090291939",
+  "siddhantsaraf.91@gmail.com"
 ];

@@ -31,9 +31,9 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
       padding: EdgeInsets.symmetric(horizontal: width * 0.02),
       child: Column(
         children: [
-          CustomSectionHeading(text: "\nWhat I Do"),
-          CustomSectionSubHeading(
-              text: "I may not be perfect, but I'm surely of some help :)\n\n"),
+          const CustomSectionHeading(text: "\nWhat I Do"),
+          const CustomSectionSubHeading(
+              text: "I belive i can convert your thought to a beautiful design\n\n"),
           Column(
             children: [
               Row(
@@ -141,10 +141,11 @@ class ServiceCardBackWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(5.0),
               side: BorderSide(color: kPrimaryColor)),
           onPressed: () {
-            serviceTitle == kServicesTitles[3]
-                ? launchURL(kServicesLinks[3])
-                : serviceTitle == kServicesTitles[4]
-                    ? launchURL(kServicesLinks[4])
+            //change the index in order to increse no of servicecard
+            serviceTitle == kServicesTitles[2]
+                ? launchURL(kServicesLinks[2])
+                : serviceTitle == kServicesTitles[3]
+                    ? launchURL(kServicesLinks[3])
                     : Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -199,25 +200,25 @@ class ServiceCardBackWidget extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          CustomFilledBtn(
-                            height: 40.0,
-                            onPressed: () =>
-                                launchURL("https://wa.me/?text=Hi Hamza!"),
-                            btnColor: Color(0xff34CB62),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(FontAwesomeIcons.whatsapp),
-                                const SizedBox(width: 8.0),
-                                Text("WhatsApp"),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: 20.0),
+                          // CustomFilledBtn(
+                          //   height: 40.0,
+                          //   onPressed: () =>
+                          //       launchURL("https://wa.me/?text=Hi Hamza!"),
+                          //   btnColor: Color(0xff34CB62),
+                          //   child: Row(
+                          //     mainAxisSize: MainAxisSize.min,
+                          //     children: [
+                          //       Icon(FontAwesomeIcons.whatsapp),
+                          //       const SizedBox(width: 8.0),
+                          //       Text("WhatsApp"),
+                          //     ],
+                          //   ),
+                          // ),
+                          // const SizedBox(height: 20.0),
                           CustomFilledBtn(
                             height: 40.0,
                             onPressed: () => launchURL(
-                                "https://www.upwork.com/freelancers/~0197b0f6aaeba9675f"),
+                                "https://www.upwork.com/freelancers/~015bfdb0e2641d6d4d?viewMode=1"),
                             btnColor: Color(0xff13A800),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
