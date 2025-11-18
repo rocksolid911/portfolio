@@ -78,20 +78,42 @@ class HomeTab extends StatelessWidget {
                       Icons.play_arrow_rounded,
                       color: kPrimaryColor,
                     ),
-                    TyperAnimatedTextKit(
-                        isRepeatingAnimation: true,
-                        speed: Duration(milliseconds: 50),
-                        textStyle: TextStyle(
-                          fontSize: height * 0.03,
-                          fontWeight: FontWeight.w200,
-                          color: _themeProvider.lightTheme
-                              ? Colors.black
-                              : Colors.white,
-                        ),
-                        text: const [
-                          " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                    AnimatedTextKit(
+                        repeatForever: true,
+                        animatedTexts: [
+                          TyperAnimatedText(
+                            " Flutter Developer",
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: TextStyle(
+                              fontSize: height * 0.03,
+                              fontWeight: FontWeight.w200,
+                              color: _themeProvider.lightTheme
+                                  ? Colors.black
+                                  : Colors.white,
+                            ),
+                          ),
+                          TyperAnimatedText(
+                            " Technical Writer",
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: TextStyle(
+                              fontSize: height * 0.03,
+                              fontWeight: FontWeight.w200,
+                              color: _themeProvider.lightTheme
+                                  ? Colors.black
+                                  : Colors.white,
+                            ),
+                          ),
+                          TyperAnimatedText(
+                            " UI/UX Enthusiast",
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: TextStyle(
+                              fontSize: height * 0.03,
+                              fontWeight: FontWeight.w200,
+                              color: _themeProvider.lightTheme
+                                  ? Colors.black
+                                  : Colors.white,
+                            ),
+                          ),
                         ]),
                   ],
                 ),
