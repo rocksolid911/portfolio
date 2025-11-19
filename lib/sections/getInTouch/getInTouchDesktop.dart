@@ -70,7 +70,7 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
 
     // final mailUrl = "mailto:$mailToLink";
     try {
-      await launch("$mailToLink");
+      await launchUrl(Uri.parse("$mailToLink"));
     } catch (e) {
       print(e);
     }
@@ -110,20 +110,42 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
                         color: kPrimaryColor,
                         size: 40.0,
                       ),
-                      TyperAnimatedTextKit(
-                          isRepeatingAnimation: true,
-                          speed: Duration(milliseconds: 50),
-                          textStyle: TextStyle(
-                            fontSize: 32.0,
-                            fontWeight: FontWeight.w200,
-                            color: _themeProvider.lightTheme
-                                ? Colors.black
-                                : Colors.white,
-                          ),
-                          text: [
-                            " Let's work together!",
-                            " To build something great!",
-                            " Something, that matters!"
+                      AnimatedTextKit(
+                          repeatForever: true,
+                          animatedTexts: [
+                            TyperAnimatedText(
+                              " Let's work together!",
+                              speed: const Duration(milliseconds: 50),
+                              textStyle: TextStyle(
+                                fontSize: 32.0,
+                                fontWeight: FontWeight.w200,
+                                color: _themeProvider.lightTheme
+                                    ? Colors.black
+                                    : Colors.white,
+                              ),
+                            ),
+                            TyperAnimatedText(
+                              " To build something great!",
+                              speed: const Duration(milliseconds: 50),
+                              textStyle: TextStyle(
+                                fontSize: 32.0,
+                                fontWeight: FontWeight.w200,
+                                color: _themeProvider.lightTheme
+                                    ? Colors.black
+                                    : Colors.white,
+                              ),
+                            ),
+                            TyperAnimatedText(
+                              " Something, that matters!",
+                              speed: const Duration(milliseconds: 50),
+                              textStyle: TextStyle(
+                                fontSize: 32.0,
+                                fontWeight: FontWeight.w200,
+                                color: _themeProvider.lightTheme
+                                    ? Colors.black
+                                    : Colors.white,
+                              ),
+                            ),
                           ]),
                     ],
                   ),

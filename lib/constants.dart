@@ -24,8 +24,12 @@ const kSocialLinks = [
 ];
 
 // URL Launcher
- launchURL(String _url)  async =>
-    await canLaunch(_url) != null ?  await launch(_url) : throw 'Could not launch $_url';
+Future<void> launchURL(String _url) async {
+  final Uri url = Uri.parse(_url);
+  if (!await launchUrl(url)) {
+    throw 'Could not launch $_url';
+  }
+}
 //remember to remove /assets before file name to work
 // Community
 final kCommunityLogo = [
